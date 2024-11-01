@@ -1,0 +1,830 @@
+:root {
+    --main-color: #F4B41B; /* يمكنك تعديل هذا اللون حسب احتياجاتك */
+  }
+  
+  .all-project {
+    width: 100%;
+  }
+  
+  .section1 {
+    height: 700px;
+    background-color: #fbf5eb;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #667085;
+    line-height: 30px;
+  }
+  
+  .header {
+    padding-top: 30px;
+    margin-left: 100px;
+    width: 70%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .food {
+    color: var(--main-color);
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 30px;
+    color: black;
+  }
+  
+  a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+  }
+  
+  .container {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: flex;
+  }
+  
+  .left-discover {
+    font-size: 20px;
+    width: 30rem;
+  }
+  
+  .delivery-fast {
+    margin-top: 50px;
+    color: #F4B41B;
+    background-color: #FFF2D4;
+    width: 6rem;
+    font-size: 15px;
+    padding: 5px;
+  }
+  
+  .section1 h1 {
+    margin-top: 25px;
+  }
+  
+  .test {
+    color: var(--main-color);
+    margin-left: 10px;
+  }
+  
+  h1 + p {
+    margin-top: 30px;
+  }
+  
+  .get-started {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .get-started button {
+    width: 10rem;
+    height: 50px;
+    border: transparent;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #FFC12F;
+    border-radius: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  
+  .circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 30px;
+  }
+  
+  /* جعل التصميم متجاوبًا للشاشات الأصغر */
+  @media (max-width: 1024px) {
+    .header {
+      margin-left: 50px;
+      width: 90%;
+    }
+    
+    .container {
+      margin-left: 50px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .left-discover {
+      width: 100%;
+    }
+  
+    .get-started button {
+      width: 8rem;
+    }
+  
+    .circle {
+      margin-left: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      margin-left: 0;
+      width: 100%;
+      padding: 0 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header .logo {
+      font-size: 24px;
+    }
+  
+    .header .links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container {
+      margin-left: 0;
+    }
+  
+    .left-discover h1 {
+      font-size: 1.5em;
+    }
+  
+    .get-started button {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    .right-image img {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding-top: 20px;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-discover h1 {
+      font-size: 1.2em;
+    }
+  
+    .get-started button {
+      font-size: 14px;
+      width: 100%;
+      height: 45px;
+    }
+  
+    .right-image img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+/* ------------------  section_2-------------------------  */
+.section2 {
+    width: 50%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .how-it-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .section2 h2 + p {
+    margin-top: 15px;
+  }
+  
+  .three-circle {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .circle-order, .circle-get, .circle-payment {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .three-circle img {
+    width: 30px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  
+  .circle-order {
+    background-color: #335DFF;
+  }
+  
+  .circle-get {
+    background-color: #F6CA00;
+  }
+  
+  .circle-payment {
+    background-color: #0BD28E;
+  }
+  
+  .orderNow, .getDelivery, .payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+  }
+  
+  .three-circle h3 {
+    margin-top: 25px;
+  }
+  
+  .three-circle h3 + p {
+    margin-top: 25px;
+  }
+  
+  /* استجابة الشاشات المتوسطة */
+  @media (max-width: 1024px) {
+    .section2 {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .three-circle {
+      width: 100%;
+      gap: 10px;
+    }
+  
+    .orderNow, .getDelivery, .payment {
+      width: 45%;
+    }
+  }
+  
+  /* استجابة الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .three-circle {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 20px;
+    }
+  
+    .orderNow, .getDelivery, .payment {
+      width: 80%;
+    }
+  
+    .circle-order, .circle-get, .circle-payment {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .three-circle img {
+      width: 24px;
+      left: 18px;
+      top: 18px;
+    }
+  
+    .section2 {
+      width: 90%;
+      margin-top: 50px;
+    }
+  }
+  
+  /* استجابة الشاشات الأصغر (الهواتف المحمولة) */
+  @media (max-width: 480px) {
+    .how-it-works h2 {
+      font-size: 20px;
+    }
+  
+    .section2 {
+      width: 100%;
+      margin-top: 30px;
+      padding: 0 10px;
+    }
+  
+    .orderNow h3, .getDelivery h3, .payment h3 {
+      font-size: 18px;
+    }
+  
+    .orderNow p, .getDelivery p, .payment p {
+      font-size: 13px;
+    }
+  
+    .circle-order, .circle-get, .circle-payment {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .three-circle img {
+      width: 20px;
+      left: 15px;
+      top: 15px;
+    }
+  }
+  
+
+/* ------------------  section_3-------------------------  */
+
+.section3 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .section3 h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .section3 h2 + p {
+    margin-top: 30px;
+  }
+  
+  .section3 p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* استجابة الشاشات المتوسطة */
+  @media (max-width: 1024px) {
+    .section3 h2 {
+      font-size: 28px;
+    }
+  
+    .section3 p {
+      font-size: 15px;
+    }
+  
+    .section3 h2 + p {
+      margin-top: 25px;
+    }
+  }
+  
+  /* استجابة الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .section3 {
+      padding: 15px;
+    }
+  
+    .section3 h2 {
+      font-size: 24px;
+    }
+  
+    .section3 p {
+      font-size: 14px;
+    }
+  
+    .section3 h2 + p {
+      margin-top: 20px;
+    }
+  }
+  
+  /* استجابة الشاشات الأصغر (الهواتف المحمولة) */
+  @media (max-width: 480px) {
+    .section3 h2 {
+      font-size: 20px;
+    }
+  
+    .section3 p {
+      font-size: 13px;
+    }
+  
+    .section3 h2 + p {
+      margin-top: 15px;
+    }
+  }
+  
+
+/* ------------------  section_4-------------------------  */
+.food-types {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1100px; /* عرض أقصى للحاوية */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* لإضافة مسافة بين العناصر */
+    margin: 0 auto; /* مركزية على الشاشة */
+    padding: 0 20px; /* لإضافة مسافات جانبية في الشاشات الصغيرة */
+  }
+  
+  .img-one {
+    width: 270px;
+    height: 310px;
+    padding: 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px;
+    transition: border-color 0.3s ease; /* تأثير انسيابي عند التحويم */
+  }
+  
+  .img-one:hover {
+    border: 2px solid #F9A755;
+  }
+  
+  .price {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto; /* لدفع العناصر للأعلى في `img-one` */
+  }
+  
+  /* استجابة الشاشات المتوسطة */
+  @media (max-width: 1024px) {
+    .img-one {
+      width: 45%; /* عنصرين في كل صف للشاشات المتوسطة */
+    }
+  }
+  
+  /* استجابة الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .img-one {
+      width: 100%; /* عنصر واحد في كل صف للشاشات الصغيرة */
+    }
+  }
+  
+/* ------------------  section_5-------------------------  */
+.pages-Numbers {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* لتحديد مسافة ثابتة بين الأزرار */
+  }
+  
+  .one {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #EAECED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: border 0.3s ease; /* تأثير انسيابي عند التحويم */
+  }
+  
+  .one:hover {
+    border: 1px solid #FEB918;
+  }
+  
+  .page {
+    background-color: #FEB918;
+    color: white;
+  }
+  
+  /* استجابة الشاشات الصغيرة */
+  @media (max-width: 600px) {
+    .one {
+      width: 30px;
+      height: 30px;
+      font-size: 14px; /* تصغير حجم النص والأزرار للشاشات الصغيرة */
+    }
+  
+    .pages-Numbers {
+      gap: 5px; /* تقليل المسافة بين الأزرار */
+    }
+  }
+  
+/* ------------------  section_6-------------------------  */
+
+.our-target{
+    margin-top: 80px;
+    width: 100%;
+    height: 600px;
+    background-color:#FFFBF3;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.fast-delivery {
+    margin-top: 50px;
+    color: var(--main-color);
+    background-color: #FFF2D4;
+    width: 100px;
+    font-size: 15px;
+    padding: 5px;
+}
+.left-image img{
+   height: 100%;
+}
+.right-text{
+    width: 400px;
+    height: 100%;
+    line-height: 30px;
+}
+.right-text h2 , .right-text p , .order {
+    margin-top: 35px;
+}
+
+.target {
+    margin-top: 60px;
+    font-size: 20px;
+    border: none;
+    color: #EF9737;
+    background-color: #FFEFC8;
+}
+.order {
+    color: white;
+    background-color: #FCC647;
+    font-size: 18px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ------------------  section_7-------------------------  */
+.discount {
+    margin-top: 100px;
+    width: 100%; /* استخدم 100% لتناسب الشاشة */
+    max-width: 1200px; /* تحديد الحد الأقصى للعرض */
+    display: flex;
+    flex-direction: column; /* اجعل العناصر عمودية على الشاشات الصغيرة */
+    align-items: center; /* توسيط العناصر */
+    padding: 0 20px; /* إضافة حشوة على الجانبين */
+  }
+  
+  @media (min-width: 768px) {
+    .discount {
+      flex-direction: row; /* عرض العناصر بشكل أفقي على الشاشات الأكبر */
+      justify-content: space-between;
+    }
+  
+    .left-discount {
+      width: 350px; /* احتفظ بعرض ثابت للأجهزة الأكبر */
+      margin-top: 0; /* إزالة الهوامش العلوية */
+    }
+  }
+  
+  .left-discount {
+    margin-top: 30px; /* تقليل المسافة العلوية على الشاشات الأصغر */
+  }
+  
+  .left-discount p {
+    margin-top: 30px;
+  }
+  
+  .left-discount img {
+    margin-top: 40px;
+  }
+  
+  .circle-phone {
+    width: 575px;
+    height: 575px;
+    border-radius: 50%;
+    background-color: #FEB918;
+    position: relative;
+  }
+  
+  .circle-white {
+    width: 537px;
+    height: 537px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  
+  .phone {
+    position: absolute;
+    left: 80px;
+    top: 20px;
+  }
+  
+  .mask {
+    position: absolute;
+    top: 28px;
+    right: 33px;
+  }
+  
+  .stars {
+    position: absolute;
+    left: 400px;
+    top: 100px;
+  }
+  
+  .one-drop {
+    position: absolute;
+    left: 400px;
+    top: 320px;
+  }
+  
+  .three-drops {
+    position: absolute;
+    left: 50px;
+    top: 180px;
+  }
+  
+  .two-stars {
+    position: absolute;
+    left: 90px;
+    top: 360px;
+  }
+  
+  /* استجابة الشاشات الصغيرة */
+  @media (max-width: 767px) {
+    .circle-phone {
+      width: 300px; /* تقليل حجم الدائرة في الشاشات الصغيرة */
+      height: 300px;
+    }
+  
+    .circle-white {
+      width: 270px; /* تقليل حجم الدائرة الداخلية */
+      height: 270px;
+    }
+  
+    .stars,
+    .one-drop,
+    .three-drops,
+    .two-stars {
+      left: 30%; /* توسيط العناصر داخل الدائرة */
+    }
+  }
+  
+/* ------------------  section_8-------------------------  */
+.footer {
+    margin-top: 200px;
+    background-color: #232233;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* اجعل العناصر عمودية على الشاشات الصغيرة */
+    align-items: center;
+    padding: 20px; /* إضافة حشوة داخلية */
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px; /* تحديد الحد الأقصى للعرض */
+    height: auto; /* السماح بالارتفاع التلقائي */
+    background-color: #FFFFFF;
+    border: 1px solid wheat;
+    border-radius: 20px;
+    padding: 20px; /* إضافة حشوة داخلية */
+    margin-bottom: 20px; /* إضافة مسافة أسفل القسم */
+}
+
+.left-tommy-food {
+    padding-left: 20px;
+    width: 350px;
+    font-size: 30px;
+}
+
+.footer p {
+    margin-top: 20px;
+    color: white;
+    text-align: center; /* توسيط النص */
+}
+
+.icons {
+    display: flex;
+    justify-content: center; /* توسيط الأيقونات */
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.center-quick h4 {
+    font-size: 30px;
+}
+
+.center-quick ul {
+    margin-top: 15px;
+    list-style-type: none;
+    line-height: 35px;
+}
+
+.right-news {
+    width: 300px;
+    font-size: 30px;
+}
+
+.input {
+    margin-top: 50px;
+    position: relative;
+}
+
+#mail {
+    height: 47px;
+    width: 100%; /* جعل العرض 100% لتناسب الشاشات الصغيرة */
+    max-width: 300px; /* تحديد الحد الأقصى للعرض */
+}
+
+.orange {
+    position: absolute;
+    right: 0;
+}
+
+.arrow-input {
+    position: absolute;
+    right: 13px;
+    top: 9px;
+}
+
+hr {
+    width: 100%; /* جعل الخط عرض 100% */
+    border: none; /* إزالة الحدود الافتراضية */
+    height: 1px; /* تحديد ارتفاع الخط */
+    background-color: white; /* لون الخط */
+    margin: 20px 0; /* إضافة مسافة فوق وتحت الخط */
+}
+
+.copy-write {
+    text-align: center; /* توسيط النص */
+    margin-top: 10px; /* إضافة مسافة فوق النص */
+}
+
+/* ------------------  section_9-------------------------  */
+.circle-mail,
+.circle-mob {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FEB918;
+    position: relative;
+}
+
+.mail-icon,
+.phone-icon {
+    font-size: 40px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.mail-contact, 
+.phone-contact {
+    display: flex;
+    align-items: center;
+}
+
+.mail-contact h2, 
+.phone-contact h2 {
+    color: black;
+    margin-left: 20px;
+}
+
+/* استجابة الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* جعل العناصر عمودية */
+        align-items: center; /* توسيط العناصر */
+    }
+
+    .left-tommy-food, 
+    .center-quick, 
+    .right-news {
+        width: 100%; /* جعل العرض 100% */
+        text-align: center; /* توسيط النص */
+        margin: 10px 0; /* إضافة مسافة بين العناصر */
+    }
+
+    .icons {
+        justify-content: center; /* توسيط الأيقونات */
+    }
+}
+
